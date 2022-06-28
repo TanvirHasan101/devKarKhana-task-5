@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html data-theme="lemonade" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Ups</title>
+
+
+    <!-- Tailwind-DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.17.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Google Icon -->
+    <!-- calculate -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+
+<body class="bg-lime-100 h-screen">
+    <header>
+        <div class="navbar bg-lime-200">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 bg-lime-200">
+                        <li><a onclick="BMI()">BMI Calculator</a></li>
+                        <li><a onclick="BMR()">BMR Calculator</a></li>
+                        <li><a onclick="Calorie()">Calorie Calculator</a></li>
+                        <li><a onclick="idealWeight()">Ideal Weight Calculator</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-3xl text-black content-center items-center "> <span>Check
+                        Ups </span>
+                    <span class="material-symbols-outlined mx-5 text-3xl">
+                        calculate
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-center mr-4 hidden lg:flex">
+                <ul class="menu menu-horizontal p-0">
+                    <li><a onclick="BMI()" class="btn btn-ghost normal-case text-xl ">BMI Calculator</a></li>
+                    <li><a onclick="BMR()" class="btn btn-ghost normal-case text-xl ">BMR Calculator</a></li>
+                    <li><a onclick="Calorie()" class="btn btn-ghost normal-case text-xl ">Calorie Calculator</a></li>
+                    <li><a onclick="idealWeight()" class="btn btn-ghost normal-case text-xl ">Ideal Weight
+                            Calculator</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="bg-lime-200 w-3/4 h-fit rounded-lg mx-auto mt-20 text-center text-3xl">
+
+        <div id="welcome-div" class="p-4">Pick a Calculator
+            <ul class="flex-row ">
+                <li><a onclick="BMI()" class="btn btn-ghost normal-case text-xl ">BMI Calculator</a></li>
+                <li><a onclick="BMR()" class="btn btn-ghost normal-case text-xl ">BMR Calculator</a></li>
+                <li><a onclick="Calorie()" class="btn btn-ghost normal-case text-xl ">Calorie Calculator</a></li>
+                <li><a onclick="idealWeight()" class="btn btn-ghost normal-case text-xl ">Ideal Weight Calculator</a>
+                </li>
+            </ul>
+        </div>
+        <div id="BMI"></div>
+        <div id="BMR"></div>
+        <div id="CALORIE"></div>
+        <div id="WEIGHT"></div>
+    </main>
+
+
+
+
+    <div id="input">
+
+    </div>
+
+    <script src="./js/bmi.js"></script>
+    <script src="./js/bmr.js"></script>
+    <script src="./js/calorie.js"></script>
+    <script src="./js/idealWeight.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
