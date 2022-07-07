@@ -60,7 +60,7 @@ function BMR() {
             <div id="bmr_warning" class="alert alert-error shadow-lg">
             <div>
                    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-             <span id="bmr_input_warning""></span>
+             <span id="bmr_input_warning"></span>
              </div>
           </div>
             <button  onclick="calculateBMR()"
@@ -74,7 +74,7 @@ function BMR() {
         <div id="bmr_result"
             class="w-full md:w-1/2 p-8 bg-lime-200 rounded-2xl mx-2 mt-6 md:mt-0 flex flex-col justify-center items-center">
             <h1 class="text-2xl font-bold ">Your BMR: <span id="bmr"
-                    class="text-neutral">_</span> Kcal/day </h1>
+                    class="text-neutral">_</span> Calories/day </h1>
                 
         </div>
     </div>
